@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Weather Checker</title>
+</head>
+
+<body>
+    <main style="display: flex;" class="flex-row justify-content-center">
+        <h1 class="page-header text-center">Weather Dashboard</h1>
+    </main>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Input Block -->
+            <form id="user-form" class="col-12 col-sm-12 col-md-2 col-lg-2">
+                <h3 class="searchText text-center">Search for City:</h3>
+                <input name="city-input" id="city-input" type="text" autofocus="true" class="form-control col-12" />
+                <button id="city-search" type="submit" class="btn col-12 mt-1">Search</button>
+                <h2 class="historyFont text-center">History:</h2>
+                <h5 id="history"></h5>
+            </form>
+
+            <!-- Current City Block -->
+            <div class="card col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10">
+                <h1 id="currentCity">Current City</h1>
+                <div class="card-body">
+                    <div class="flex">
+                        <img src="" alt="" class="icon" />
+                    </div>
+                    <h5 class="description">Description</h5>
+                    <h5 class="card-title temp mt-2">Temp</h5>
+                    <h5 class="card-title wind">Wind</h5>
+                    <h5 class="card-title humidity">Humidity</h5>
+                </div>
+            </div>
+            <!-- Forecast cards sections-->
+            <article id="forecast" class="row col-12 justify-content-center"></article>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+        integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
