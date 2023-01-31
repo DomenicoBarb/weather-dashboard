@@ -27,7 +27,7 @@ THEN I am again presented with current and future conditions for that city
 ![Screenshot](assets/img/screenshot.png)
 
 ## Description:
-This is a simple weather dashboard app that will display the five day forecast for an inputted city. Using OpenWeather, Bootstrap and Jquery/JqueryUI.
+This is a simple weather dashboard app that will display the five day forecast for an inputted city. Using OpenWeather, Bootstrap, Jquery/JqueryUI and localStorage.
 
 # Link to deployed website:
 https://domenicobarb.github.io/weather-dashboard/
