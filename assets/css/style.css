@@ -1,0 +1,122 @@
+.day{
+    flex-direction: column;
+    color: white;
+    background: rgb(49, 116, 240);
+    border-radius: 10px;
+    padding: 5px;
+    margin: 0px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+}
+
+body {
+    background-color: rgb(188, 188, 188);
+}
+
+main{
+    min-height: 75px;
+    background-image: linear-gradient(to right, rgb(49, 116, 240) , rgb(0, 0, 121));
+    color: white
+}
+.btn{
+    background-color: rgb(49, 116, 240);
+    color: rgb(0, 0, 0);
+    
+}
+
+.btn:hover{
+    box-shadow: 2px 2px 2px rgb(0, 0, 0);
+    background-color: rgb(0, 0, 121);
+    color: rgb(255, 255, 255);
+}
+.form-input{
+    text-align: center;
+}
+
+.page-header {
+    color: rgb(255, 255, 255);
+    font-size: 55px;
+}
+
+.weekHeader {
+    font-size: 20px;
+}
+
+.list-item:hover{
+    color: rgb(0, 94, 216);
+    cursor: pointer;
+    text-shadow: 2px 2px 2px rgb(99, 99, 99);
+    text-decoration: underline;
+}
+
+.card {
+    background-color: rgb(134, 134, 134);
+}
+
+.row {
+    padding-right: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .weekHeader {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 851px) {
+    .historyFont{
+        font-size: 20px;
+    }
+    .list-item {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1284px) {
+    .searchText {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 1161px) {
+    .searchText {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 1045px) {
+    .searchText {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 975px) {
+    .searchText {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 910px) {
+    .searchText {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 798px) {
+    .searchText {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 765px) {
+    .searchText {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .page-header {
+        align-items: center;
+    }
+}
