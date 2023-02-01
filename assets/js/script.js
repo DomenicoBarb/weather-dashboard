@@ -1,3 +1,6 @@
+// added to avoid a weird cookie error
+document.cookie = "path=/; SameSite=Strict;";
+
 // Day vars
 var currentDay = dayjs().format('dddd MMMM, DD, YYYY');
 $('#currentDay').text(currentDay);
@@ -53,7 +56,8 @@ displayHistory();
 
 var formSubmitHandler = function (event) {
   event.preventDefault();
-  var userCity = nameInputEl.value.trim();
+  // only accepts first word input, IE London Ontario will be cut down to London
+  var userCity = nameInputEl.value.split(" ")[0].trim();
   if (cityHistory.indexOf(userCity) === -1) {
     cityHistory.push(userCity);
     localStorage.setItem("City History", JSON.stringify(cityHistory));
@@ -181,7 +185,7 @@ $(function () {
       'Calgary',
       'Ottawa',
       'Edmonton',
-      'Mississsauga',
+      'Mississauga',
       'Kitchener',
       'Chicago',
       'Houston',
